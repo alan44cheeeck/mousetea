@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "mousetea"
+version = "${mod_version}"
+displayName = "Mouse Tea"
+authors = "you"
+description = '''
+Добавляет чай, при выпивании которого игрок постепенно превращается в антропоморфную мышь.
+'''
+
+[[dependencies.mousetea]]
+    modId = "forge"
+    mandatory = true
+    versionRange = "[${forge_version},)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.mousetea]]
+    modId = "minecraft"
+    mandatory = true
+    versionRange = "[${minecraft_version},)"
+    ordering = "NONE"
+    side = "BOTH"
